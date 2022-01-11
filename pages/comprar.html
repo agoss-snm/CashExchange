@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <title>CashChange</title>
+  </head>
+  <body>
+
+    <div class="d-flex">
+      <div id="sidebar-container" class="bg-primary">
+        <div class="logo">
+            <a href="../index.html"> <img src="../img/logotype.png"width="150" height="150"></a>
+            <h1 id="nameTag">Cash Exchange S.A.</h1>
+          </div>
+
+        <div class="menu">
+          <a href="../index.html" class=" d-block p-3"><i class="icon ion-ios-keypad"></i> Principal</a>
+          <a href="comprar.html" class=" d-block p-3"><i class="icon ion-ios-ribbon"></i> Comprar</a>
+          <a href="carrito.html" class=" d-block p-3"><i class="icon ion-md-pie"></i> Carrito</a>
+          <a href="asesorate.html" class="icoConf d-block p-3"><i class="icon ion-md-person"></i></i> Asesoramiento</a>
+          <a href="contact.html" class=" d-block p-3"><i class="icon ion-md-text"></i> Escribenos</a>
+          
+        </div>
+      </div>
+      
+
+      <div class="w-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline position-relative d-inline-block">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-search position-absolute" type="submit"><i class="icon ion-ios-search"></i>
+        </button>
+      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="comprar.html"> <i class="icon ion-logo-usd" id="iconUsd"></i></a>
+              </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="carrito.html"><i class="icon ion-ios-cart" id="iconCar"></i><span class="sr-only">(current)</span></a>
+          </li>
+          <button class="switch" id="switch">
+            <span><i class="icon ion-md-sunny"></i></span>
+            <span><i class="icon ion-md-moon"></i></span>
+          </button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div id="content">
+        <section class="py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9" id="talon">
+                <h6 class="font-weight-bold mb-0" id="bienv"> Monedas disponibles:</h6>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          
+      
+            <br>
+            <div class= "container">
+        
+                <table class="table col-sm-12" id="table2">
+                    <thead class="table table-striped">
+                      <tr>
+                        <th scope="col">Moneda</th>
+                        <th scope="col">Compra</th>
+                        <th scope="col">Venta</th>
+                        <th scope="col">Impuesto Pais</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>USD</td>
+                        <td>92.86</td>
+                        <td>99.14</td>
+                        <td>%35</td>
+                        <td><input type="number" id="txtUsd"min="0"></td>
+                        <td><button id="botonA" type="button" class="btn btn-success">Agregar al Carrito</button></td>
+                      </tr>
+                      <tr>
+                        <td>EURO</td>
+                        <td>108.15</td>
+                        <td>116.51</td>
+                        <td>%35</td>
+                        <td><input type="number" id="txtEu"min="0"></td>
+                        <td><button id="botonB" type="button" class="btn btn-success">Agregar al Carrito</button></td>
+                      </tr>
+                      <tr>
+                        <td>REAL</td>
+                        <td>16.16</td>
+                        <td>18.47</td>
+                        <td>%35</td>
+                        <td><input type="number" id="txtR" min="0"></td>
+                        <td><button id="botonC" type="button" class="btn btn-success">Agregar al Carrito</button></td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  
+            </div>
+            <section class="py-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-9">
+                    <h6 class="font-weight-bold mb-0"> Detalle:</h6>
+                  </div>
+                </div>
+              </div>
+              </section>
+            
+           
+            <div class= container>
+        
+              <table class="table col-sm-12" id="wtw">
+                  <thead class="table table-striped">
+                    <tr>
+                      <th scope="col">Moneda</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Sin Impuestos</th>
+                      <th scope="col">Con Impuestos</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>USD</td>
+                      <td id="cantidadUsd">0</td>
+                      <td id="sinimpUsd">0</td>
+                      <td id="conimpUsd">0</td>
+                    </tr>
+                    <tr>
+                      <td>EURO</td>
+                      <td id="cantidadEu">0</td>
+                      <td id="sinimpEu">0</td>
+                      <td id="conimpEu">0</td>
+                    </tr>
+                    <tr>
+                      <td>REAL</td>
+                      <td id="cantidadR">0</td>
+                      <td id="sinimpR">0</td>
+                      <td id="conimpR">0</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="container">
+                <table id="tableTotal">
+                  <tr id="botonttAcu">Total Acumulado</tr>
+                    <tr id="totalAcumulado"></tr>
+                </table>
+                  </div>
+
+              </table>
+                <br><br>
+         
+          <div class= container>
+              <a class="btn btn-secondary btn-lg btn-block" href="carrito.html" id="buttonCar" role="button">Ver carrito</a>
+            </div>
+         <br>
+      </div>
+      <br><br>
+
+      <footer class="footerD">
+        <p class="textFooter">Copyright 2021 cashexchange.com - Todos los derechos reservados - Términos y Condiciones - Políticas de Privacidad - www.cashexchange.com | Tel:+54 11 4121-xxxx Av. Paseo Colon 746 Piso 1 | 1063ACU | CABA | Argentina </p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="../js/comprar.js"></script>
+</body>
+</html>

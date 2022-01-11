@@ -1,0 +1,14 @@
+[
+{
+    "moneda":"Usd",
+    "precio":"99.14"
+},
+{
+    "moneda":"Euro",
+    "precio":"116.51"
+},
+{
+    "moneda":"Real",
+    "precio":"18.47"
+}
+]
